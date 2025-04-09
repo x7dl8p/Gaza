@@ -1,5 +1,5 @@
-import { PromptingIsAllYouNeed } from "@/prompting"
+import { GazaNeedsYou } from "@/prompting"
 
 export default function Home() {
-  return <PromptingIsAllYouNeed />
+  return <GazaNeedsYou />
 }

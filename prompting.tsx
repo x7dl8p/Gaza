@@ -2,8 +2,8 @@
 
 import { PromptingGame } from "./src/components/PromptingGame"
 
-export function PromptingIsAllYouNeed() {
+export function GazaNeedsYou() {
   return <PromptingGame />
 }
 
-export default PromptingIsAllYouNeed
+export default GazaNeedsYou

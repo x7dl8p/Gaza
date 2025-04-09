@@ -24,7 +24,7 @@ export const initializeGame = (
   const BALL_SPEED = 6 * scale
 
   pixelsRef.current = []
-  const words = ["PROMPTING", "IS ALL YOU NEED"]
+  const words = ["PALESTINE", "NEEDS US ALL"]
 
   const totalWidthLarge = calculateWordWidth(words[0], LARGE_PIXEL_SIZE)
   const totalWidthSmall = words[1].split(" ").reduce((width, word, index) => {
