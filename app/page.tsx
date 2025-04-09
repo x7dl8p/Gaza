@@ -1,5 +1,5 @@
-import { PromptingGame } from "@/src/components/PromptingGame"
+import { PromptingIsAllYouNeed } from "@/prompting"
 
 export default function Home() {
-  return <PromptingGame />
+  return <PromptingIsAllYouNeed />
 }
