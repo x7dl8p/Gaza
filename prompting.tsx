@@ -1,9 +1,9 @@
 "use client"
 
-import { PromptingGame } from "./src/components/PromptingGame"
+import { Promptingneed } from "./src/components/PromptingGame"
 
 export function GazaNeedsYou() {
-  return <PromptingGame />
+  return <Promptingneed />
 }
 
 export default GazaNeedsYou

@@ -1,7 +1,7 @@
 import { BACKGROUND_COLOR, BALL_COLOR, COLOR, HIT_COLOR, PADDLE_COLOR } from "../constants"
 import { Ball, Paddle, Pixel } from "../types"
 
-export const updateGame = (
+export const updateneed = (
   canvas: HTMLCanvasElement,
   ballRef: { current: Ball },
   paddlesRef: { current: Paddle[] },
@@ -78,7 +78,7 @@ export const updateGame = (
   })
 }
 
-export const drawGame = (
+export const drawneed = (
   ctx: CanvasRenderingContext2D,
   canvas: HTMLCanvasElement,
   pixelsRef: { current: Pixel[] },

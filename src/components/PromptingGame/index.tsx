@@ -2,10 +2,10 @@
 
 import { useEffect, useRef } from "react"
 import { Ball, Paddle, Pixel } from "./types"
-import { initializeGame } from "./utils/initialization"
-import { drawGame, updateGame } from "./utils/gameLoop"
+import { initializeneed } from "./utils/initialization"
+import { drawneed, updateneed } from "./utils/needLoop"
 
-export function PromptingGame() {
+export function Promptingneed() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const pixelsRef = useRef<Pixel[]>([])
   const ballRef = useRef<Ball>({ x: 0, y: 0, dx: 0, dy: 0, radius: 0 })
@@ -23,18 +23,18 @@ export function PromptingGame() {
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
       scaleRef.current = Math.min(canvas.width / 1000, canvas.height / 1000)
-      initializeGame(canvas, scaleRef.current, pixelsRef, ballRef, paddlesRef)
+      initializeneed(canvas, scaleRef.current, pixelsRef, ballRef, paddlesRef)
     }
 
-    const gameLoop = () => {
-      updateGame(canvas, ballRef, paddlesRef, pixelsRef)
-      drawGame(ctx, canvas, pixelsRef, ballRef, paddlesRef)
-      requestAnimationFrame(gameLoop)
+    const needLoop = () => {
+      updateneed(canvas, ballRef, paddlesRef, pixelsRef)
+      drawneed(ctx, canvas, pixelsRef, ballRef, paddlesRef)
+      requestAnimationFrame(needLoop)
     }
 
     resizeCanvas()
     window.addEventListener("resize", resizeCanvas)
-    gameLoop()
+    needLoop()
 
     return () => {
       window.removeEventListener("resize", resizeCanvas)
@@ -45,9 +45,9 @@ export function PromptingGame() {
     <canvas
       ref={canvasRef}
       className="fixed top-0 left-0 w-full h-full"
-      aria-label="Gaza Needs You: Fullscreen Pong game with pixel text"
+      aria-label="Gaza Needs You: Fullscreen Pong need with pixel text"
     />
   )
 }
 
-export default PromptingGame
+export default Promptingneed
