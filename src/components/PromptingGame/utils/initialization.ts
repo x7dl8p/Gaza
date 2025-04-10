@@ -12,7 +12,7 @@ export const calculateWordWidth = (word: string, pixelSize: number) => {
   )
 }
 
-export const initializeGame = (
+export const initializeneed = (
   canvas: HTMLCanvasElement,
   scale: number,
   pixelsRef: { current: Pixel[] },
